@@ -6,3 +6,13 @@ h1 {
 p {
     color: red;
 }
+
+.navbar-nav div {
+    color: red;
+    text-align: center;
+}
+
+#body div {
+  max-width: 1000px;
+  margin: auto;
+}
