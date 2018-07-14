@@ -163,3 +163,9 @@ input[type="checkbox"]:checked ~ .grid {
 .hidden {
     display: none;
 }
+
+#project1{
+	position: fixed;
+  top: 150;
+  left: auto;
+}
