@@ -16,7 +16,7 @@ body {
 }
 
 .lightmenu {
-	width:960px;
+  width:auto;
 	height:62px;
 	background: transparent;
 	background-image:url(images/light.png);
@@ -75,11 +75,7 @@ body {
 }
 
 
-.grid {
- position: fixed;
- top: 150;
- left: auto;
-}
+
 
 .lightbox{
 	width: 100%;
@@ -121,7 +117,7 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 
-.grid .grid-item {
+ .grid-item {
  display: inline-block;
  width: 315px;
  padding: 16px;
@@ -129,18 +125,37 @@ input[type="checkbox"]:checked ~ .grid {
  -webkit-transition: opacity .5s;
  transition: opacity .5s;
 }
-.grid .grid-item:hover {
+ .grid-item:hover {
  opacity: 1;
 }
 @media screen and (max-width: 1024px) {
- .grid .grid-item {
+ .grid-item {
  width: 50%;
+
+ }
+ #wrapper {
+ 	width:960px;
+ 	margin:0 auto;
+ 	margin-top:50px;
+ }
+}
+@media screen and (max-width: 960px) {
+	#wrapper {
+	 width:460px;
+	 margin:0 auto;
+	 margin-top:50px;
  }
 }
 @media screen and (max-width: 480px) {
- .grid .grid-item {
+ .grid-item {
  width: 100%;
+ height: 96px;
  }
+ #wrapper {
+	width:460px;
+	margin:0 auto;
+	margin-top:50px;
+}
 }
 .grid img {
  max-width: 100%;
