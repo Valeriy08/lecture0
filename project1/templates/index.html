@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Menu</title>
+
+
+<link rel="stylesheet" href="light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="bootstrap.css" type="text/css" media="screen" />
+
+</head>
+<body>
+<div id="wrapper">
+<div class="lightmenu">
+	<nav>
+  	<ul class="lightBlue" id="one">
+    	<li class="current"><a href="index.html">Home</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    	<li><a href="table.html">Table</a></li>
+    	<li><a href="about.html">About</a></li>
+  	</ul>
+	</nav>
+	<header>
+		<div id="project1">
+			<h1>Project 0: Homepage {{ headline }}</h1>
+			<p>This is a small test website. Where I tried to implement a small gallery of photos that are on the Gallery tab.</p>
+		</div>
+		<ul>
+			{% for name in names %}
+				<li>{{ name }}</li>
+			{% endfor %}
+		</ul>
+	</header>
+</div>
+</div>
+</div>
+</body>
+</html>
